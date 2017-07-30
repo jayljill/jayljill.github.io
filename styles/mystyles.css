@@ -1,0 +1,174 @@
+.title-color {
+    background-color: #ec8da1;
+    height: 110px;
+    position: fixed;
+    /*固定位置定位*/
+    top: 0;
+    /*距離上方 0 像素*/
+    z-index: 1;
+    /*重疊時會在其他元素之上*/
+    width: 100%;
+}
+
+.title-left {
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    line-height: 110px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.title-right {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    line-height: 110px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.middle-color {
+    background-color: #60a59e;
+    height: 708px;
+    top: 110px;
+    position: relative;
+    z-index: 0;
+    width: 100%;
+}
+
+.middle-circle-up {
+    top: 90px;
+    text-align: center;
+}
+
+.middle-circle {
+    margin: 0 auto;
+    width: 255px;
+    height: 255px;
+    border-radius: 99em;
+    background-color: #ebac85;
+}
+
+.middle-first {
+    text-align: center;
+    top: 120px;
+    font-size: 62px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.middle-second {
+    top: 135px;
+}
+
+.middle-img {
+    text-align: center;
+}
+
+.middle-third {
+    text-align: center;
+    top: 165px;
+    font-size: 28px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.portfolio-color {
+    background-color: white;
+    height: 600px;
+    top: 282px;
+    position: relative;
+    z-index: 0;
+    width: 100%;
+}
+
+.portfolio-first {
+    text-align: center;
+    font-size: 62px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.portfolio-img {
+    text-align: center;
+}
+
+.portfolio-font {
+    margin-top: 110px;
+}
+
+.portfolio-square1 {
+    height: 266px;
+    background-color: #d557a8;
+}
+
+.portfolio-square2 {
+    height: 266px;
+    background-color: #e6b231;
+}
+
+.portfolio-square3 {
+    height: 266px;
+    background-color: #b1c2df;
+}
+
+.portfolio-square4 {
+    height: 266px;
+    background-color: #edced1;
+}
+
+.portfolio-square5 {
+    height: 266px;
+    background-color: #a6c698;
+}
+
+.portfolio-square6 {
+    height: 266px;
+    background-color: #405c8c;
+}
+
+.search_photo {
+    position: relative;
+    top: -178px;
+    width: 100px;
+    height: 100px;
+    left: 135px;
+    opacity: 0;
+    z-index: 2;
+}
+
+.search_photo:hover {
+    position: relative;
+    top: -178px;
+    width: 100px;
+    height: 100px;
+    left: 135px;
+    opacity: 0.9;
+    z-index: 2;
+}
+
+.padding {
+    padding: 10px;
+}
+
+.height {
+    height: 280px;
+}
+
+.anta_photo {
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    top: 24px;
+    left: 106px;
+    z-index: 1;
+}
+
+.about-color {
+    background-color: #60a59e;
+    height: 500px;
+    top: 562px;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.about-font {
+    margin-top: 0px;
+}
