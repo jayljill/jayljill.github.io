@@ -172,3 +172,6 @@
 .about-font {
     margin-top: 0px;
 }
+.app-modal-window .modal-dialog {
+  width: 1366px !important;
+}
