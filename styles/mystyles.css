@@ -72,8 +72,8 @@
 
 .portfolio-color {
     background-color: white;
-    height: 600px;
-    top: 282px;
+    height: 470px;
+    top: 90px;
     position: relative;
     z-index: 0;
     width: 100%;
@@ -95,32 +95,32 @@
 
 .portfolio-square1 {
     height: 266px;
-    background-color: #d557a8;
+    background-color: #19A89D;
 }
 
 .portfolio-square2 {
     height: 266px;
-    background-color: #e6b231;
+    background-color: #FEEAB8;
 }
 
 .portfolio-square3 {
     height: 266px;
-    background-color: #b1c2df;
+    background-color: #E7F2DE;
 }
 
 .portfolio-square4 {
     height: 266px;
-    background-color: #edced1;
+    background-color: #D0D2D3;
 }
 
 .portfolio-square5 {
     height: 266px;
-    background-color: #a6c698;
+    background-color: #DCF1F9;
 }
 
 .portfolio-square6 {
     height: 266px;
-    background-color: #405c8c;
+    background-color: #F6AEAB;
 }
 
 .search_photo {
@@ -162,7 +162,7 @@
 
 .about-color {
     background-color: #60a59e;
-    height: 500px;
+    height: 590px;
     top: 562px;
     position: relative;
     z-index: 2;
@@ -170,8 +170,10 @@
 }
 
 .about-font {
-    margin-top: 0px;
+    position: relative;
+    top: -385px;
 }
+
 .app-modal-window .modal-dialog {
-  width: 1366px !important;
+    width: 1366px !important;
 }
