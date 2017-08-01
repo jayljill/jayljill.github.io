@@ -162,7 +162,7 @@
 
 .about-color {
     background-color: #60a59e;
-    height: 590px;
+    height: 1650px;
     top: 562px;
     position: relative;
     z-index: 2;
@@ -176,4 +176,16 @@
 
 .app-modal-window .modal-dialog {
     width: 1366px !important;
+}
+.about-me{
+    text-align: center;
+}
+.about-font{
+    font-size: 26px;
+}
+.about-font1{
+    font-size: 22px;
+}
+.about-right{
+   text-align: right; 
 }
