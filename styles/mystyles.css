@@ -181,11 +181,16 @@
     text-align: center;
 }
 .about-font{
-    font-size: 26px;
+    font-size: 0.9em;
 }
 .about-font1{
     font-size: 22px;
 }
 .about-right{
    text-align: right; 
+}
+.about-p{
+    border-left: 1px solid #242424;
+    margin-bottom: 30px;
+    padding-left: 60px;
 }
