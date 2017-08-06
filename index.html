@@ -6,113 +6,135 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Hello Github Pages</title>
+
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="styles/mystyles.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
+
+    <link href="styles/mystyles.css" rel="stylesheet">
+
 </head>
 
 <body ng-controller="FirstCtrl">
 
     <div class="title-color">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="row">
-                    <div class="col-lg-7 title-left">
-                        YOUR AWESOME TITLE
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-9 title-left">
+                    YOUR AWESOME TITLE
+                </div>
+
+                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-3 title-menu">
+                    <div class="row">
+                        MENU
                     </div>
-                    <div class="col-lg-5">
-                        <div class="row">
-                            <div class="col-lg-4 title-right">
-                                <a href="#portfolio">PORTFOLIO</a>
-                            </div>
-                            <div class="col-lg-4 title-right">
-                                <a href="#about">ABOUT</a>
-                            </div>
-                            <div class="col-lg-4 title-right">
-                                CONTACT
-                            </div>
+                </div>
+
+                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 title-list">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-4 title-right">
+                            <a href="#portfolio">PORTFOLIO</a>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 title-right">
+                            <a href="#about">ABOUT</a>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 title-right">
+                            <a href="#about">CONTACT</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
     <div class="middle-color">
-        <div class="row">
-            <div class="col-lg-12 middle-circle-up">
-                <div class="middle-circle"><img src="images/yuka.png" style="width: 254px;"></div>
-            </div>
-            <div class="col-lg-12 middle-first">design for LIFE</div>
-            <div class="col-lg-12 middle-second">
-                <div class="row">
-                    <div class="col-lg-4"></div>
-                    <div class="col-lg-4 middle-img"><img src="images/star-line.png" style="width: 400px;"></div>
-                    <div class="col-lg-4"></div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 middle-circle-up">
+                    <div class="middle-circle"><img src="images/yuka.png"></div>
                 </div>
+                <div class="col-lg-12 middle-first">design for LIFE</div>
+                <div class="col-lg-12 middle-second">
+                    <div class="middle-img"><img src="images/star-line.png"></div>
+                </div>
+                <div class="col-lg-12 middle-third">Web Developer - User Experience Designer</div>
             </div>
-            <div class="col-lg-12 middle-third">Web Developer - User Experience Designer</div>
         </div>
     </div>
+
+
     <div class="portfolio-color" id="portfolio">
-        <div class="row">
-            <div class="row portfolio-font">
+        <div class="container-fluid">
+            <div class="row">
                 <div class="col-lg-12 portfolio-first">PORTFOLIO</div>
-                <div class="col-lg-12 portfolio-img"><img src="images/star-line.png" style="width: 400px;"></div>
-            </div>
-            <div class="col-lg-12">
-                <div class="row padding">
-                    <div class="col-lg-4 height" ng-click="openanta()">
-                        <div class="portfolio-square1"></div>
+                <div class="col-lg-12 portfolio-img">
+                    <div class="middle-img"><img src="images/star-line.png"></div>
+                </div>
+
+                <div class="col-lg-12 col-md-12 padding">
+                    <!-- 這個改好了-->
+                    <div class="col-lg-4 col-md-4 height portfolio-square1" ng-click="moreinfo()">
                         <img src="images/search.png" class="search_photo">
                         <img src="images/anta.png" class="anta_photo">
                     </div>
-                    <div class="col-lg-4 height" ng-click="openmozila()">
+
+                    <!--
+                    <div class="col-lg-4 col-md-4 height" ng-click="openmozila()">
                         <div class="portfolio-square2"></div>
                         <img src="images/search.png" class="search_photo">
                         <img src="images/mozila.png" class="anta_photo">
                     </div>
-                    <div class="col-lg-4 height">
+                    <div class="col-lg-4 col-md-4 height">
                         <div class="portfolio-square3"></div>
                         <img src="images/search.png" class="search_photo">
                         <img src="images/sharp.png" class="anta_photo">
                     </div>
+-->
                 </div>
-            </div>
-            <div class="col-lg-12">
-                <div class="row padding">
-                    <div class="col-lg-4">
-                        <div class="portfolio-square4"></div>
-                        <img src="images/search.png" class="search_photo">
-                        <img src="images/nokia.png" class="anta_photo">
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="portfolio-square5"></div>
-                        <img src="images/search.png" class="search_photo">
-                        <img src="images/breakfast.png" class="anta_photo">
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="portfolio-square6"></div>
-                        <img src="images/search.png" class="search_photo">
-                        <img src="images/pinterest.png" class="anta_photo">
+
+                <!--
+                <div class="col-lg-12">
+                    <div class="row padding">
+                        <div class="col-lg-4">
+                            <div class="portfolio-square4"></div>
+                            <img src="images/search.png" class="search_photo">
+                            <img src="images/nokia.png" class="anta_photo">
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="portfolio-square5"></div>
+                            <img src="images/search.png" class="search_photo">
+                            <img src="images/breakfast.png" class="anta_photo">
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="portfolio-square6"></div>
+                            <img src="images/search.png" class="search_photo">
+                            <img src="images/pinterest.png" class="anta_photo">
+                        </div>
                     </div>
                 </div>
+-->
+
             </div>
         </div>
     </div>
-    <div class="about-color" id="about">
-        <div class="row">
-            <div class="about-font">
-                <div class="col-lg-12 portfolio-first">ABOUT</div>
-                <div class="col-lg-12 portfolio-img"><img src="images/star-line.png" style="width: 400px;"></div>
-                <p class="about-p">I had always been incredibly interested in people - how they think, how they feel, 
-                   why they do the things they do. So much so, I decide to major in Mass communication and studied an elective course on visual design, graphic design to enhance my computer skills and knowledge and learn how to design programs.I always prepare myself for the digital-era and be able to apply my interest and specialty to the workplace.</p>
-            </div>
 
-            <div class="col-lg-12">
-                <div class="row">
-                    <div class="col-lg-6">
+
+    <div class="about-color" id="about">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="about-font">
+                    <div class="col-lg-12 portfolio-first">ABOUT</div>
+                    <div class="col-lg-12 portfolio-img">
+                        <div class="middle-img"><img src="images/star-line.png"></div>
+                    </div>
+                    <p class="about-p">I had always been incredibly interested in people - how they think, how they feel, why they do the things they do. So much so, I decide to major in Mass communication and studied an elective course on visual design, graphic design to enhance my computer skills and knowledge and learn how to design programs.I always prepare myself for the digital-era and be able to apply my interest and specialty to the workplace.</p>
+                </div>
+
+
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
                         <div class="row">
                             <div class="col-lg-6 about-right">
                                 <h1 class="about-font">&nbsp</h1>
@@ -146,8 +168,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                         <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="row">
                             <div class="col-lg-6">
                                 <h1 class="about-font">技能專長</h1>
                                 <h1 class="about-font">擅長工具： HTML、jQuery、JavaScript、Adobe Photoshop、Illustrator</h1>
@@ -180,35 +202,27 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div style="height: 305px">
-        <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
-            <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
-                <img ng-src="{{slide.image}}" style="margin:auto;">
-                <div class="carousel-caption">
-                    <h4>Slide {{slide.id}}</h4>
-                    <p>{{slide.text}}</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
 
+            </div>
+        </div>
+    </div>
+    
+    <div class="moreinfo" ng-if="tobyShow">123</div>
 
 </body>
-
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/angular/angular.min.js"></script>
 <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
 <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
 <script src="js/controllers.js"></script>
 
 <script type="text/ng-template" id="myModalContent.html">
-    <div style="height: 305px">
-        <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+    <div style="">
+        <div uib-carousel active="active" no-wrap="noWrapSlides">
             <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
-                <img ng-src="{{slide.image}}" style="margin:auto;">
+                <div class="toby">
+                    <img ng-src="{{slide.image}}">
+                </div>
                 <div class="carousel-caption">
                     <h4>Slide {{slide.id}}</h4>
                     <p>{{slide.text}}</p>

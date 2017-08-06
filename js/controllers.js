@@ -14,7 +14,7 @@ App.controller("FirstCtrl", function ($scope, $uibModal) {
 
                 $scope.addSlide = function (i) {
                     slides.push({
-                        image: './images/' + i +'.png',
+                        image: './images/' + i + '.png',
                         text: 'demo',
                         id: currIndex++
                     });
@@ -26,7 +26,7 @@ App.controller("FirstCtrl", function ($scope, $uibModal) {
                 };
 
                 for (var i = 0; i < 4; i++) {
-                    $scope.addSlide(i+1);
+                    $scope.addSlide(i + 1);
                 }
 
                 // Randomize logic below
@@ -68,9 +68,9 @@ App.controller("FirstCtrl", function ($scope, $uibModal) {
             console.log('Modal dismissed at: ' + new Date());
         });
     };
-    
-    
-        $scope.openmozila = function () {
+
+
+    $scope.openmozila = function () {
         var modalInstance = $uibModal.open({
             templateUrl: 'myModalContent.html',
             windowClass: 'app-modal-window',
@@ -83,7 +83,7 @@ App.controller("FirstCtrl", function ($scope, $uibModal) {
 
                 $scope.addSlide = function (i) {
                     slides.push({
-                        image: './images/' + i +'.png',
+                        image: './images/' + i + '.png',
                         text: 'demo',
                         id: currIndex++
                     });
@@ -95,7 +95,7 @@ App.controller("FirstCtrl", function ($scope, $uibModal) {
                 };
 
                 for (var i = 4; i < 9; i++) {
-                    $scope.addSlide(i+1);
+                    $scope.addSlide(i + 1);
                 }
 
                 // Randomize logic below
@@ -137,5 +137,15 @@ App.controller("FirstCtrl", function ($scope, $uibModal) {
             console.log('Modal dismissed at: ' + new Date());
         });
     };
+    
+    $scope.moreinfo = function () {
+        $scope.tobyShow = true;
+        console.log($scope.tobyShow);
+    }
 
 });
+
+
+$('.title-menu').click(function () {
+    $('.title-list').toggleClass('open');
+})
