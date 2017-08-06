@@ -1,6 +1,15 @@
+a,
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
 .title-color {
     background-color: #ec8da1;
-    height: 110px;
+    /*    height: 110px;*/
     position: fixed;
     /*固定位置定位*/
     top: 0;
@@ -8,6 +17,15 @@
     z-index: 1;
     /*重疊時會在其他元素之上*/
     width: 100%;
+}
+
+.title-menu {
+    display: none;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    line-height: 110px;
+    font-family: 'Permanent Marker', cursive;
 }
 
 .title-left {
@@ -28,58 +46,62 @@
 
 .middle-color {
     background-color: #60a59e;
-    height: 708px;
-    top: 110px;
+    padding-top: 110px;
     position: relative;
     z-index: 0;
     width: 100%;
 }
 
 .middle-circle-up {
-    top: 90px;
+    padding-top: 90px;
     text-align: center;
 }
 
 .middle-circle {
     margin: 0 auto;
-    width: 255px;
-    height: 255px;
+    width: 25%;
+    min-width: 255px;
     border-radius: 99em;
     background-color: #ebac85;
 }
 
 .middle-first {
     text-align: center;
-    top: 120px;
+    padding-top: 42px;
     font-size: 62px;
     font-family: 'Permanent Marker', cursive;
 }
 
 .middle-second {
-    top: 135px;
+    padding-top: 35px;
 }
 
 .middle-img {
     text-align: center;
+    width: 50%;
+    min-width: 400px;
+    margin: 0 auto;    
 }
 
 .middle-third {
+    padding-top: 35px;
+    padding-bottom: 108px;
     text-align: center;
-    top: 165px;
     font-size: 28px;
     font-family: 'Permanent Marker', cursive;
 }
 
 .portfolio-color {
     background-color: white;
-    height: 470px;
-    top: 90px;
+/*    height: 470px;*/
+/*    top: 90px;*/
     position: relative;
     z-index: 0;
     width: 100%;
 }
 
 .portfolio-first {
+    padding-top: 62px;
     text-align: center;
     font-size: 62px;
     font-family: 'Permanent Marker', cursive;
@@ -89,13 +111,17 @@
     text-align: center;
 }
 
+
+
 .portfolio-font {
-    margin-top: 110px;
+    padding-top: 110px;
 }
 
 .portfolio-square1 {
-    height: 266px;
     background-color: #19A89D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .portfolio-square2 {
@@ -124,21 +150,18 @@
 }
 
 .search_photo {
-    position: relative;
-    top: -178px;
+    position: absolute;
     width: 100px;
     height: 100px;
-    left: 135px;
-    opacity: 0;
     z-index: 2;
+    opacity: 0;
+    transition: all .3s;
 }
 
 .search_photo:hover {
-    position: relative;
-    top: -178px;
+    position: absolute;
     width: 100px;
     height: 100px;
-    left: 135px;
     opacity: 0.9;
     z-index: 2;
 }
@@ -154,43 +177,75 @@
 .anta_photo {
     width: 220px;
     height: 220px;
-    position: absolute;
-    top: 24px;
-    left: 106px;
+    position: relative;
     z-index: 1;
 }
 
 .about-color {
     background-color: #60a59e;
-    height: 900px;
-    top: 562px;
+/*    height: 900px;*/
+/*    top: 562px;*/
     position: relative;
-    z-index: 2;
+/*    z-index: 2;*/
     width: 100%;
 }
 
 .about-font {
     position: relative;
-    top: -385px;
+/*    top: -385px;*/
 }
 
 .app-modal-window .modal-dialog {
     width: 1366px !important;
 }
-.about-me{
+
+.about-me {
     text-align: center;
 }
-.about-font{
+
+.about-font {
     font-size: 0.9em;
 }
-.about-font1{
+
+.about-font1 {
     font-size: 22px;
 }
-.about-right{
-   text-align: right; 
+
+.about-right {
+    text-align: right;
 }
-.about-p{
+
+.about-p {
     border-left: 1px solid #242424;
-    margin-bottom: 30px;
-    padding-left: 60px;
+    padding: 30px 60px;
+}
+
+@media screen and (max-width: 768px) {
+    .title-left {
+        font-size: 20px;
+    }
+    .title-menu {
+        display: block;
+    }
+    .title-list {
+        display: none;
+    }
+    .title-list.open {
+        display: block;
+    }
+}
+
+.toby {
+    margin: 0 auto;
+    width: 500px;
+}
+
+.moreinfo {
+    width: 100vw;
+    height: 100vh;
+    background-color: yellow;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
 }
