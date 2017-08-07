@@ -78,7 +78,7 @@ img {
 
 .middle-img {
     text-align: center;
-    width: 50%;
+    width: 25%;
     min-width: 400px;
     margin: 0 auto;    
 }
@@ -125,28 +125,38 @@ img {
 }
 
 .portfolio-square2 {
-    height: 266px;
     background-color: #FEEAB8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .portfolio-square3 {
-    height: 266px;
     background-color: #E7F2DE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .portfolio-square4 {
-    height: 266px;
     background-color: #D0D2D3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .portfolio-square5 {
-    height: 266px;
     background-color: #DCF1F9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .portfolio-square6 {
-    height: 266px;
     background-color: #F6AEAB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .search_photo {
