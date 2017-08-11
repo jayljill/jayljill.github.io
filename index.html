@@ -75,16 +75,17 @@
 
                 <div class="col-lg-12 col-md-12 padding">
                     <!-- 這個改好了-->
-                    <div class="col-lg-4 col-md-4 height portfolio-square1" ng-click="moreinfo()">
+                    <div class="col-lg-4 col-md-4 height portfolio-square1" ng-click="openanta()">
                         <img src="images/search.png" class="search_photo">
                         <img src="images/anta.png" class="anta_photo">
+                        <!--                        <div>Web/Dev</div>-->
                     </div>
 
                     <div class="col-lg-4 col-md-4 height portfolio-square2" ng-click="openmozila()">
                         <img src="images/search.png" class="search_photo">
                         <img src="images/mozila.png" class="anta_photo">
                     </div>
-                    <div class="col-lg-4 col-md-4 height portfolio-square3">
+                    <div class="col-lg-4 col-md-4 height portfolio-square3" ng-click="opensharp()">
                         <img src="images/search.png" class="search_photo">
                         <img src="images/sharp.png" class="anta_photo">
                     </div>
@@ -92,15 +93,15 @@
 
 
                 <div class="col-lg-12 col-md-12 padding">
-                    <div class="col-lg-4 col-md-4 height portfolio-square4">
+                    <div class="col-lg-4 col-md-4 height portfolio-square4 " ng-click="opennokia()">
                         <img src="images/search.png" class="search_photo">
                         <img src="images/nokia.png" class="anta_photo">
                     </div>
-                    <div class="col-lg-4 col-md-4 height portfolio-square5">
+                    <div class="col-lg-4 col-md-4 height portfolio-square5" ng-click="openbreakfast()">
                         <img src="images/search.png" class="search_photo">
                         <img src="images/breakfast.png" class="anta_photo">
                     </div>
-                    <div class="col-lg-4 col-md-4 height portfolio-square6">
+                    <div class="col-lg-4 col-md-4 height portfolio-square6" ng-click="openpinterest()">
                         <img src="images/search.png" class="search_photo">
                         <img src="images/pinterest.png" class="anta_photo">
                     </div>
@@ -124,6 +125,8 @@
                 </div>
 
 
+<!--
+                
                 <div class="col-lg-12 col-md-12 col-sm-12">
                     <div class="col-lg-6 col-md-6 col-sm-6">
                         <div class="row">
@@ -193,12 +196,48 @@
                         </div>
                     </div>
                 </div>
+-->
 
+                <div class="table-responsive">
+                    <table class="table">
+                        <caption>工作經歷</caption>
+                        <thead>
+                            <tr>
+                                <th>年份</th>
+                                <th>職位</th>
+                                <th>擅長工具</th>
+                                <th>證照資格</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2015/12~2017/06 <br>軟體工程師/富智康國際股份有限公司<br>雲端應用二部</td>
+                                <td>*擔任軟體工程師,ANTA智慧鞋網站、Nokia內部系統、Sharp雲端服務開發<br>*擔任後端工程人員與設計師之橋樑，將project標準化與製作文件</td>
+                                <td>HTML、jQuery、JavaScript、Adobe Photoshop、Illustrator</td>
+                                <td>TOEIC（665）/HTML5, CSS3, jQuery<br>brBootstrap _台灣大學資訊系統訓練班<br>Programming Mobile Applications for Android Handheld Systems_Coursera</td>
+
+                            </tr>
+                            <tr>
+                                <td>2013/09 ~ 2015/03<br>Yahoo專案使用者經驗助理/國立交通大學認知心理傳播實驗室</td>
+                                <td>*負責Yahoo奇摩新聞網站/行動首頁新聞之使用性測試<br>*使用者經驗之質性、量化資料分析</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>2012/05 ~ 2012/10<br>研究助理/中央研究院</td>
+                                <td>*文物數位化後設資料之建置<br>*數位典藏創新加值模式分析</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
             </div>
         </div>
     </div>
 
-    <div class="moreinfo" ng-if="tobyShow">123</div>
+    <!--    <div class="moreinfo" ng-if="tobyShow">123</div>-->
 
 </body>
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -207,22 +246,89 @@
 <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
 <script src="js/controllers.js"></script>
 
-<script type="text/ng-template" id="myModalContent.html">
+<script type="text/ng-template" id="myModalContent1.html">
     <div style="">
         <div uib-carousel active="active" no-wrap="noWrapSlides">
             <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
                 <div class="toby">
                     <img ng-src="{{slide.image}}">
                 </div>
+                <!--
                 <div class="carousel-caption">
                     <h4>Slide {{slide.id}}</h4>
                     <p>{{slide.text}}</p>
+                </div>
+-->
+                <div>
+                    <a href="http://running.anta.com/login"><img src="images/viewproject.png" style="width: 200px;"></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</script>
+
+<script type="text/ng-template" id="myModalContent2.html">
+    <div style="">
+        <div uib-carousel active="active" no-wrap="noWrapSlides">
+            <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+                <div class="toby">
+                    <img ng-src="{{slide.image}}">
                 </div>
             </div>
         </div>
     </div>
 </script>
 
+<script type="text/ng-template" id="myModalContent3.html">
+    <div style="">
+        <div uib-carousel active="active" no-wrap="noWrapSlides">
+            <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+                <div class="toby">
+                    <img ng-src="{{slide.image}}">
+                </div>
+                <div>
+                    <a href="https://cloud.sharpmobile.com.cn/"><img src="images/viewproject.png" style="width: 200px;"></a>
+                </div>
 
+            </div>
+        </div>
+    </div>
+</script>
 
+<script type="text/ng-template" id="myModalContent4.html">
+    <div style="">
+        <div uib-carousel active="active" no-wrap="noWrapSlides">
+            <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+                <div class="toby">
+                    <img ng-src="{{slide.image}}">
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script type="text/ng-template" id="myModalContent5.html">
+    <div style="">
+        <div uib-carousel active="active" no-wrap="noWrapSlides">
+            <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+                <div class="toby">
+                    <img ng-src="{{slide.image}}">
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script type="text/ng-template" id="myModalContent6.html">
+    <div style="">
+        <div uib-carousel active="active" no-wrap="noWrapSlides">
+            <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+                <div class="toby">
+                    <img ng-src="{{slide.image}}">
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
 </html>
