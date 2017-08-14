@@ -297,7 +297,7 @@ App.controller("FirstCtrl", function ($scope, $uibModal) {
                     assignNewIndexesToSlides(indexes);
                 };
 
-                for (var i = 21; i < 23; i++) {
+                for (var i = 21; i < 22; i++) {
                     $scope.addSlide(i + 1);
                 }
 
@@ -343,7 +343,7 @@ App.controller("FirstCtrl", function ($scope, $uibModal) {
 
     $scope.opennokia = function () {
         var modalInstance = $uibModal.open({
-            templateUrl: 'myModalContent5.html',
+            templateUrl: 'myModalContent6.html',
             windowClass: 'app-modal-window',
             controller: function ($scope) {
                 $scope.myInterval = 5000;
@@ -365,7 +365,7 @@ App.controller("FirstCtrl", function ($scope, $uibModal) {
                     assignNewIndexesToSlides(indexes);
                 };
 
-                for (var i = 23; i < 25; i++) {
+                for (var i = 23; i < 24; i++) {
                     $scope.addSlide(i + 1);
                 }
 
