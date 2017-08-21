@@ -365,7 +365,7 @@ App.controller("FirstCtrl", function ($scope, $uibModal) {
                     assignNewIndexesToSlides(indexes);
                 };
 
-                for (var i = 23; i < 26; i++) {
+                for (var i = 23; i < 27; i++) {
                     $scope.addSlide(i + 1);
                 }
 
