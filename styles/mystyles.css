@@ -279,6 +279,13 @@ caption {
     text-align: left;
 }
 
+#main {
+    overflow: hidden;
+}
+#secondSection {
+    position: relative;
+    padding: 60px 0;
+}
 .twelve {
     width: 100%;
 }
@@ -287,6 +294,10 @@ caption {
     max-width: 1120px;
     margin: 0 auto;
     clear: both;
+}
+
+div {
+    display: block;
 }
 
 .contentWrapper_portfolio, .contentWrapper_small {
@@ -328,7 +339,7 @@ caption {
 .contentH3 {
     font-family: 'clear_sans_lightregular', sans-serif;
     color: #242424;
-    font-size: 1.1em;
+    font-size: 1.7em;
     text-transform: uppercase;
     margin: 0 0 10px 0;
 }
@@ -340,15 +351,7 @@ p {
     line-height: 1.8em;
     margin-bottom: 10px;
 }
-
-
-.contentH3 {
-    font-family: 'clear_sans_lightregular', sans-serif;
-    color: #242424;
-    font-size: 1.1em;
-    text-transform: uppercase;
-    margin: 0 0 10px 0;
-}
+  
 
 .marginTop30 {
     margin-top: 30px;
