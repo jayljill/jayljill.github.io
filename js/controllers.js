@@ -414,11 +414,11 @@ App.controller("FirstCtrl", function ($scope, $uibModal) {
         console.log($scope.tobyShow);
     }
 
-    $scope.openzenbolab = function(){
-        console.log("rrrr")
-        window.location = 'http://tseng-yu-chia.com/Project01.html';
-     // <a href="Project01.html">
-    }
+    // $scope.openzenbolab = function(){
+    //     console.log("rrrr")
+    //     window.location = 'http://tseng-yu-chia.com/Project01.html';
+    //  // <a href="Project01.html">
+    // }
 
 });
 
