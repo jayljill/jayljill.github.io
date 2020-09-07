@@ -328,7 +328,7 @@ div {
 .contentWrapper_small {
     width: 66.667%;
     margin: 0 auto;
-    position: relative;
+/*    position: relative;*/
 }
 
 .responsive-paddingRight20 {
