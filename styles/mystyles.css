@@ -271,28 +271,28 @@ img {
         width: 375px!important;
         ;
     }
-    #P1{
+    .P1{
     display: none;
     }
-    #P2{
+    .P2{
     display: none;
     }
-    #P3{
+    .P3{
     display: none;
     }
-    #P4{
+    .P4{
     display: none;
     }
-    #P5{
+    .P5{
     display: none;
     }
-    #P6{
+    .P6{
     display: none;
     }
-    #P7{
+    .P7{
     display: none;
     }
-    #P8{
+    .P8{
     display: none;
     }
 }
@@ -416,73 +416,85 @@ p {
     text-align: center;
 }
 
-#P1{
+.P1{
     position:absolute;
+/*
     top:71px;
     left:0px;
-    z-index:-1;
+*/
+    top: 12%; /* Position the top of the image vertically in the middle */
+    right: 90%;
+/*    z-index:-1;*/
     width: 150px;
     height: 344px;
 }
 
-#P2{
+.P2{
     position:absolute;
+/*
     top:77px;
     left:547px;
+*/
+    top: 20%; /* Position the top of the image vertically in the middle */
+    left: 37%;
     z-index:0;
     width: 54px;
     height: 61px;
 }
 
-#P3{
+.P3{
     position:absolute;
-    top:193px;
-    left:446px;
+    top: 50%; /* Position the top of the image vertically in the middle */
+    left: 31%;
     z-index:1;
     width: 88px;
     height: 74px;
 }
 
-#P4{
+.P4{
     position:absolute;
-    top:333px;
-    left:502px;
+    top: 84%; /* Position the top of the image vertically in the middle */
+    left: 35%;
     z-index:2;
     width: 147px;
     height: 94px;
     transform: rotate(4deg);
 }
 
-#P5{
+.P5{
     position:absolute;
-    top:77px;
-    left:848px;
+    top: 20%; /* Position the top of the image vertically in the middle */
+    right: 37%;
     z-index:3;
     width: 68px;
     height: 61px;
 }
 
-#P6{
+.P6{
     position:absolute;
-    top:211px;
-    left:847px;
+     top: 50%; /* Position the top of the image vertically in the middle */
+    right: 31%;
     z-index:2;
     width: 133px;
     height: 100px;
 }
 
-#P7{
+.P7{
     position:absolute;
-    top:348px;
-    left:793px;
+     top: 84%; /* Position the top of the image vertically in the middle */
+    right: 35%;
     z-index:3;
     width: 113px;
     height: 79px;
 }
-#P8{
+.P8{
     position:absolute;
+/*
     top:148px;
     left:1256px;
+*/
+    top: 12%; /* Position the top of the image vertically in the middle */
+    left: 87.4%;
     z-index:3;
     width: 182px;
     height: 271px;
@@ -494,4 +506,10 @@ hr {
   background-color:#fff;
   height:1px;
   width:50%;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Make the container the full height of the viewport */
 }
