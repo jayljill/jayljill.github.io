@@ -98,6 +98,13 @@ img {
     font-family: 'Permanent Marker', cursive;
 }
 
+.middle-third-a{
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Permanent Marker', cursive;
+}
+
 .portfolio-color {
     background-color: white;
     /*    height: 470px;*/
