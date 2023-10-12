@@ -85,9 +85,16 @@ img {
 
 .middle-third {
     padding-top: 35px;
-    padding-bottom: 108px;
+    padding-bottom: 0px;
     text-align: center;
     font-size: 28px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.middle-third-a{
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 22px;
     font-family: 'Permanent Marker', cursive;
 }
 
