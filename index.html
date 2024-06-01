@@ -28,11 +28,17 @@
                 <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 title-list">
                     <div class="row">
                         <div class="col-lg-4 col-md-4 col-sm-4 title-right">
-                            <a href="#portfolio">PORTFOLIO</a>
+                            <a href="#" onclick="openCV(); return false;">Download CV</a>
                         </div>
+                        <script>
+                        function openCV() {
+                         window.open('images/CV_Yu-Chia_Tseng.pdf', '_blank', 'width=800,height=600');}
+                        </script>
+<!--
                         <div class="col-lg-4 col-md-4 col-sm-4 title-right">
                             <a href="#about">ABOUT</a>
                         </div>
+-->
                         <div class="col-lg-4 col-md-4 col-sm-4 title-right">
                             <a href="mailto:jayljill@gmail.com">CONTACT</a>
                         </div>
@@ -58,20 +64,32 @@
                    
                 </div>
                 <div class="col-lg-12 middle-first">design for LIFE</div>
-<!--
-                <div class="col-lg-12 middle-second">
-                    <div class="middle-img"><img src="images/star-line.png"></div>
-                </div>
--->
-                <div class="col-lg-12 middle-third">Web Developer - User Experience Designer</div>
-                 <div class="middle-third-a"><a href="images/CV_Yu-Chia_Tseng.pdf" download>Download CV</a></div>
+                <div class="col-lg-12 middle-first"></div>
+                 <div class="middle-third-a">
             </div>
         </div>
     </div>
-    <div class="portfolio-color" id="portfolio">
+    <div>
+        <button class="tab-button active" onclick="openTab(event, 'about')">About Me</button>
+        <button class="tab-button" onclick="openTab(event, 'projects')">Projects</button>
+    </div>
+    <div id="about" class="tab-content active">
+    <div class="about-color" id="about">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12 portfolio-first">PORTFOLIO</div>
+                <div class="about-font">
+                    <p class="about-p">I'm Yuka, a first-year PhD student in Information Science at Cornell University, advised by Susan Fussell. My research focuses on how people perceive and verify the accuracy of information using LLM tools in their daily lives, such as ChatGPT. Broadly, my interests lie in AI-human interaction and AI-human collaboration.</p>
+                    <p class="about-p">
+                    Before joining Cornell, I gained experience as a front-end engineer and user experience designer at Foxconn and ASUS, primarily focusing on AI products such as Smart Shoes, the Zenbo robot, and AI Speakers. Additionally, I conducted research at the Psychology and Design and Innovation departments at National Taiwan University. I hold a master's degree in Communication from National Yang Ming Chiao Tung University, where I was mentored by Chen-Chao Tao.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="projects" class="tab-content">
+            <div class="portfolio-color" id="portfolio">
+        <div class="container-fluid">
+            <div class="row">
 <!--
                 <div class="col-lg-12 col-md-12 padding">
 
@@ -143,137 +161,35 @@
             </div>
         </div>
     </div>
-    <div class="about-color" id="about">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="about-font">
-                    <div class="col-lg-12 portfolio-first"> <a href="">  ABOUT</div>
-<!--
-                    <div class="col-lg-12 portfolio-img">
-                        <div class="middle-img"><img src="images/star-line.png"></div>
-                    </div>
--->
-<!--
-                    <div class="col-lg-12 portfolio-img">
-                        <div class="middle-img"><img src="images/star-line.png"></div>
-                    </div>
--->
-<!--
-                    <div class="col-lg-12 portfolio-img">
-                        <div class="middle-img"><svg width="100px" height="100px" viewBox="0 0 300 200">
-                        <line x1="40" x2="260" y1="100" y2="100" stroke="#5184AF" stroke-width="20" stroke-linecap="round" stroke-dasharray="1, 30"/>
-                        </svg></div>
-                    </div>
--->
-<!--
-<svg width="300px" height="200px" viewBox="0 0 300 200">
- <line x1="40" x2="260" y1="100" y2="100" stroke="#5184AF" stroke-width="20" stroke-linecap="round" stroke-dasharray="1, 30"/>
-</svg>
--->
-                    <p class="about-p">I had always been incredibly interested in people - how they think, how they feel, why they do the things they do. So much so, I decide to major in Mass communication and studied an elective course on visual design, graphic design to enhance my computer skills and knowledge and learn how to design programs.I always prepare myself for the digital-era and be able to apply my interest and specialty to the workplace.</p>
-                </div>
-<!--
-                <div class="table-responsive">
-                    <table class="table">
-                        <caption>工作經歷</caption>
-                        <thead>
-                            <tr>
-                                <th>年份</th>
-                                <th>職位</th>
-                                <th>擅長工具</th>
-                                <th>證照資格</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>2019/06~ NOW
-                                    <br>Freelancer
-                                    <br>UI/UX designer</td>
-                                <td>*Xnet 大數據後台優化
-                                    <br>*AI 智慧足球App之規劃，制定流程，提供wireframe
-                                    <br>*各大官網形象與網站RWD之規劃</td>
-                                <td>Sketch、、Adobe Photoshop、Zeplin、Marvel()、HTML、jQuery、JavaScript、Illustrator</td>
-                                <td>TOEIC/HTML5, CSS3, jQuery
-                                    <br>brBootstrap _台灣大學資訊系統訓練班
-                                    <br>Programming Mobile Applications for Android Handheld Systems_Coursera</td>
-                            </tr>
-                            <tr>
-                                <td>2017/12~2019/05
-                                    <br>華碩 設計中心
-                                    <br>使用者經驗部</td>
-                                <td>擔任UX designer
-                                    <br>*交互設計-參與華碩前端產品之設計
-                                    （規劃flow與wireframe）與專案管理，產品涉及機器人與智慧音箱<br>*用戶研究-挖掘使用者行為與需求，製作競品分析尋找產品定位，透過使用者測試優化產品</td>
-<td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>2015/12~2017/06
-                                    <br>軟體工程師/富智康國際股份有限公司
-                                    <br>雲端應用二部</td>
-                                <td>*擔任軟體工程師,負責ANTA智慧鞋網站、Nokia內部系統、Sharp雲端服務開發
-                                    <br>*擔任後端工程人員與設計師之橋樑，將project標準化與製作文件</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>2013/09 ~ 2015/03
-                                    <br>Yahoo專案使用者經驗助理/國立交通大學認知心理實驗室</td>
-                                <td>*負責Yahoo奇摩新聞網站/行動首頁新聞之使用性測試
-                                    <br>*使用者經驗之質性、量化資料分析</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>2012/05 ~ 2012/10
-                                    <br>研究助理/中央研究院</td>
-                                <td>*文物數位化後設資料之建置
-                                    <br>*數位典藏創新加值模式分析</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="table-responsive">
-                    <table class="table">
-                        <caption>Conference</caption>
-                        <thead>
-                            <tr>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>2015/08 Tseng,Yu-Chia; Tao, Chen-Chao List or grid? Eye movement assessment of the influence of the presentation format</br>on decision making during Web searching,Paper presented at the Conference of European Conference on Eye Movements, Vienna, Austria.(碩士畢業論文)</td>
-                            </tr>
-                            <tr>
-                                <td>2015/05 曾由佳〈Pinterest 社交媒體介面、使用性評估〉,「2015 年中華民國設計學會設計研討會」論文。台灣,雲林。</td>
-                            </tr>
-                            <tr>
-                                <td>2014/05 曾由佳〈圖像風格與語意一致性對場景知覺之眼動研究〉,「2014年中華民國設計學會設計研討會」論文。台灣,台北。</td>
-                            </tr>
-                            <tr>
-                                <td>2013/11 曾由佳〈行動搜尋世代降臨:關鍵字廣告之行動廣告效果〉,「2013 台灣資訊社會研究學會研討會」論文。台灣,新竹。</td>
-                            </tr>
-                            <tr>
-                                <td>2013/07 曾由佳〈愛在監控年代-兩性在 facebook 上的嫉妒與關係滿意度研究〉, 「2013年中華傳播學會」論文。台灣,台北。</td>
-                            </tr>
-                            <tr>
-                                <td>2013/05 曾由佳〈圖像再現形式對眼球運動與場景知覺之影響〉,「2013 造型設計教育國際學術研討會 」論文。台灣,台北。</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
--->
-            </div>
-        </div>
     </div>
+    <script>
+        function openTab(evt, tabName) {
+            // Declare all variables
+            var i, tabcontent, tabbuttons;
+
+            // Get all elements with class="tab-content" and hide them
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+                tabcontent[i].classList.remove("active");
+            }
+
+            // Get all elements with class="tab-button" and remove the class "active"
+            tabbuttons = document.getElementsByClassName("tab-button");
+            for (i = 0; i < tabbuttons.length; i++) {
+                tabbuttons[i].classList.remove("active");
+            }
+// Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(tabName).style.display = "block";
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
     <div>
         <div class="container-fluid">
             <div class="row">
                 <div class="">
-                    <div class="col-lg-12">Copyright © Tseng Yu-Chia 2017-2023 by AngularJS </div>
+                    <div class="col-lg-12">Copyright © Tseng Yu-Chia 2017-2024 by AngularJS </div>
                 </div>
             </div>
         </div>
